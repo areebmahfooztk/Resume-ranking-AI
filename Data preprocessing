@@ -1,0 +1,14 @@
+def clean_text(text):
+    
+    text=re.sub('<.*?>', ' ', text)  
+    
+    text = text.translate(str.maketrans(' ',' ',string.punctuation))
+    
+    text = re.sub('[^a-zA-Z]',' ',text)  
+    
+    text = re.sub("\n"," ",text)
+    
+    text = text.lower()
+    
+    text=' '.join(text.split())
+    return text

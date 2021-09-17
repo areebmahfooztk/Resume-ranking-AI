@@ -1,0 +1,15 @@
+import PyPDF2
+
+import os,os.path
+
+from sklearn.feature_extraction.text import CountVectorizer
+
+from sklearn.metrics.pairwise import cosine_similarity
+
+import re
+
+import string
+
+from nltk.corpus import stopwords
+
+from nltk.tokenize import word_tokenize 
